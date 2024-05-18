@@ -32,16 +32,14 @@ const HeroSection = () => {
             {openTab === 2 && (
               <>
                 <Widget imagePath={YoutubeIcon3} controlType={'displayType'} value={0} label={'Subscriber'} />
-                <Widget imagePath={YoutubeIcon1} controlType={'displayType'} value={1} label={'Views'} />
-                <Widget imagePath={YoutubeIcon2} controlType={'displayType'} value={3} label={'Likes'} />
-                <Widget imagePath={YoutubeIcon2} controlType={'displayType'} value={3} label={'Comments'} />
-                <Widget imagePath={YoutubeIcon2} controlType={'displayType'} value={3} label={'Videos'} />
+                <Widget imagePath={YoutubeIcon3} controlType={'displayType'} value={1} label={'Views'} />
+                <Widget imagePath={YoutubeIcon3} controlType={'displayType'} value={2} label={'Likes'} />
+                <Widget imagePath={YoutubeIcon3} controlType={'displayType'} value={3} label={'Videos'} />
               </>
             )}
             {openTab === 3 && (
               <div>
-                <h2 className="text-2xl font-semibold mb-2 text-blue-600">Section 3 Content</h2>
-                <p className="text-gray-700">Fusce hendrerit urna vel tortor luctus, nec tristique odio tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+                <h2 className="text-2xl font-semibold mb-2 text-blue-600">Coming Soon</h2>
               </div>
             )}
           </div>

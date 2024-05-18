@@ -1,8 +1,12 @@
 import React from 'react'
+import DisplayPlaceholder from '../assets/elements/display.png'
 
 const Dashboard = () => {
   return (
-    <div>Dashboard V1.1</div>
+    <div>
+      <h1>Smart Display</h1>
+      <img src={DisplayPlaceholder} alt='display' />
+    </div>
   )
 }
 
