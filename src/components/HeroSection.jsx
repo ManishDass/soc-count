@@ -22,7 +22,7 @@ const HeroSection = () => {
           </div>
   
           {/* Display three icons per row */}
-          <div className="grid grid-cols-3 gap-6 justify-items-center">
+          <div className="grid grid-cols-3 gap-6 justify-items-center text-center">
             {openTab === 1 && (
               <>
                 <Widget imagePath={ClockIcon1} controlType={'displayType'} value={4} label={'Time'} />
