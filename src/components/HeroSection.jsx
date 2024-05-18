@@ -12,7 +12,7 @@ const HeroSection = () => {
   const [openTab, setOpenTab] = useState(1);
 
   return (
-    <div className="bg-gray-100 font-sans flex h-screen items-center justify-center">
+    <div className="h-[65%] bg-gray-100 font-sans fle items-center justify-center">
       <div className="p-8">
         <div className="max-w-md mx-auto">
           <div className="mb-4 flex space-x-1 p-1 bg-neutral-200 rounded-lg shadow-md">
@@ -22,11 +22,12 @@ const HeroSection = () => {
           </div>
   
           {/* Display three icons per row */}
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-3 gap-6 justify-items-center">
             {openTab === 1 && (
               <>
                 <Widget imagePath={ClockIcon1} controlType={'displayType'} value={4} label={'Time'} />
-                <Widget imagePath={WeatherIcon1} controlType={'displayType'} value={4} label={'Weather'} />
+                <Widget imagePath={WeatherIcon1} controlType={'displayType'} value={4} label={'Temparature'} />
+                <Widget imagePath={WeatherIcon2} controlType={'displayType'} value={4} label={'Humidity'} />
               </>
             )}
             {openTab === 2 && (

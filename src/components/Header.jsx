@@ -2,7 +2,11 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div>Header V1.4</div>
+    <nav className="flex justify-around list-none h-[5%]">
+    <li>Back</li>
+    <li>TIME</li>
+    <li>Setting</li>
+    </nav>
   )
 }
 

@@ -10,7 +10,7 @@ const Widget = ({ imagePath, controlType, value, label }) => {
         ApiESP.setBrightness(value);
       }
     }}>
-      <img src={imagePath} alt={label} />
+      <img className='w-[70px]' src={imagePath} alt={label} />
       <p>{label}</p>
     </div>
   );

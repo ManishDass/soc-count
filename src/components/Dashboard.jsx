@@ -1,13 +1,15 @@
-import React from 'react'
-import DisplayPlaceholder from '../assets/elements/display.png'
+import React from 'react';
+import DisplayPlaceholder from '../assets/elements/display.png';
 
 const Dashboard = () => {
   return (
-    <div>
-      <h1>Smart Display</h1>
-      <img src={DisplayPlaceholder} alt='display' />
-    </div>
-  )
-}
+    <div className='h-[30%] flex items-center justify-center space-x-4 ' >
+      <ion-icon name="chevron-back-outline" size="large" style={{color: "grey"}}></ion-icon>
+      <img className='w-[60vw] md:w-[200px]' src={DisplayPlaceholder} alt='display' />
+      <ion-icon name="chevron-forward-outline" size="large" style={{color: "grey"}}></ion-icon>
 
-export default Dashboard
+    </div>
+  );
+};
+
+export default Dashboard;
