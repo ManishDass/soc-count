@@ -22,11 +22,11 @@ const HeroSection = () => {
           </div>
 
           <div className={`transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-l-4 border-blue-600 ${openTab === 1 ? '' : 'hidden'}`}>
-          <Widget imagePath={ClockIcon1} api={'http://192.168.1.150/set-display-type?type=4'} label={'yt'} />
+          <Widget imagePath={ClockIcon1} controlType={'displayType'} value={4} label={'yt'} />
           </div>
 
           <div className={`transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-l-4 border-blue-600 ${openTab === 2 ? '' : 'hidden'}`}>
-          <Widget imagePath={YoutubeIcon3} api={'http://192.168.1.150/set-display-type?type=0'} label={'yt'} />
+          <Widget imagePath={YoutubeIcon3} controlType={'displayType'} value={0} label={'yt'} />
           </div>
 
           <div className={`transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-l-4 border-blue-600 ${openTab === 3 ? '' : 'hidden'}`}>
