@@ -8,7 +8,7 @@ const setDisplayType = async (type) => {
   try {
     const response = await fetch(`${esp8266IpAddress}/set-display-type?type=${type}`, {
       method: 'GET',
-      mode: 'no-cors',
+      mode: 'cors',
       headers: {
         'Authorization': `Bearer ${apiKey}`
       }
@@ -25,7 +25,7 @@ const setBrightness = async (brightness) => {
   try {
     const response = await fetch(`${esp8266IpAddress}/set-brightness?brightness=${brightness}`, {
       method: 'GET',
-      mode: 'no-cors',
+      mode: 'cors',
       headers: {
         'Authorization': `Bearer ${apiKey}`
       }
