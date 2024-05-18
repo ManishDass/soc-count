@@ -5,10 +5,11 @@ const apiUrl = 'https://smart-display-liard.vercel.app/api'; // Replace with you
 const apiKey = 'ae55df63-7f1f-4c41-be1e-c1bfcb1a4a7e'; // Replace with your API key
 
 // Function to set display type
-export const setDisplayType = async (type) => {
+const setDisplayType = async (type) => {
   try {
     const response = await fetch(`${apiUrl}/set-display-type?type=${type}`, {
       method: 'GET',
+      mode: 'cors',
       headers: {
         'Authorization': `Bearer ${apiKey}`
       }
@@ -21,10 +22,11 @@ export const setDisplayType = async (type) => {
 };
 
 // Function to set brightness
-export const setBrightness = async (brightness) => {
+const setBrightness = async (brightness) => {
   try {
     const response = await fetch(`${apiUrl}/set-brightness?brightness=${brightness}`, {
       method: 'GET',
+      mode: 'cors',
       headers: {
         'Authorization': `Bearer ${apiKey}`
       }
@@ -35,3 +37,8 @@ export const setBrightness = async (brightness) => {
     console.error('Error:', error);
   }
 };
+
+export default {
+  setDisplayType,
+  setBrightness
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import ApiESP from '../service/ApiESP';
+import ApiESP from '../service/ApiESP'
 
 const Widget = ({ imagePath, controlType, value, label }) => {
   return (
