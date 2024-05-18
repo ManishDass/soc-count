@@ -20,23 +20,35 @@ const HeroSection = () => {
             <button onClick={() => setOpenTab(2)} className={`flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300 ${openTab === 2 ? 'bg-white text-black' : ''}`}>Social</button>
             <button onClick={() => setOpenTab(3)} className={`flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300 ${openTab === 3 ? 'bg-blue-600 text-white' : ''}`}>Extra</button>
           </div>
-
-          <div className={`transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-l-4 border-blue-600 ${openTab === 1 ? '' : 'hidden'}`}>
-          <Widget imagePath={ClockIcon1} controlType={'displayType'} value={4} label={'yt'} />
-          </div>
-
-          <div className={`transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-l-4 border-blue-600 ${openTab === 2 ? '' : 'hidden'}`}>
-          <Widget imagePath={YoutubeIcon3} controlType={'displayType'} value={0} label={'yt'} />
-          </div>
-
-          <div className={`transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-l-4 border-blue-600 ${openTab === 3 ? '' : 'hidden'}`}>
-            <h2 className="text-2xl font-semibold mb-2 text-blue-600">Section 3 Content</h2>
-            <p className="text-gray-700">Fusce hendrerit urna vel tortor luctus, nec tristique odio tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+  
+          {/* Display three icons per row */}
+          <div className="grid grid-cols-3 gap-4">
+            {openTab === 1 && (
+              <>
+                <Widget imagePath={ClockIcon1} controlType={'displayType'} value={4} label={'Time'} />
+                <Widget imagePath={WeatherIcon1} controlType={'displayType'} value={4} label={'Weather'} />
+              </>
+            )}
+            {openTab === 2 && (
+              <>
+                <Widget imagePath={YoutubeIcon3} controlType={'displayType'} value={0} label={'Subscriber'} />
+                <Widget imagePath={YoutubeIcon1} controlType={'displayType'} value={1} label={'Views'} />
+                <Widget imagePath={YoutubeIcon2} controlType={'displayType'} value={3} label={'Likes'} />
+                <Widget imagePath={YoutubeIcon2} controlType={'displayType'} value={3} label={'Comments'} />
+                <Widget imagePath={YoutubeIcon2} controlType={'displayType'} value={3} label={'Videos'} />
+              </>
+            )}
+            {openTab === 3 && (
+              <div>
+                <h2 className="text-2xl font-semibold mb-2 text-blue-600">Section 3 Content</h2>
+                <p className="text-gray-700">Fusce hendrerit urna vel tortor luctus, nec tristique odio tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+              </div>
+            )}
           </div>
         </div>
       </div>
     </div>
-  );
+  );  
 };
 
 export default HeroSection;
