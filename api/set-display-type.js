@@ -6,10 +6,10 @@ export default async function handler(req, res) {
    const esp8266IpAddress = process.env.REACT_APP_DDNS_IP; // DDNS cz my ISP Dont provide me static IP
   
     try {
-      const response = await fetch(`http://manishdas.ddns.net/set-display-type?type=${type}`, {
+      const response = await fetch(`${esp8266IpAddress}/set-display-type?type=${type}`, {
         method: 'GET',
         headers: {
-          'Authorization': `Bearer ae55df63-7f1f-4c41-be1e-c1bfcb1a4a7e`
+          'Authorization': `Bearer ${apiKey}`
         }
       });
       const data = await response.json();
