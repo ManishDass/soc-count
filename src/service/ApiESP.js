@@ -1,7 +1,7 @@
 // api.js
 import React from 'react';
 
-const apiUrl = process.env.API_URL; // Replace with your Vercel project's API URL
+const apiUrl = process.env.REACT_APP_API_URL; // Replace with your Vercel project's API URL
 const apiKey = process.env.REACT_APP_API_KEY; // API key
 
 // Function to set display type
