@@ -1,8 +1,8 @@
 // api.js
 import React from 'react';
 
-const apiUrl = 'https://smart-display-liard.vercel.app/api'; // Replace with your Vercel project's API URL
-const apiKey = 'ae55df63-7f1f-4c41-be1e-c1bfcb1a4a7e'; // Replace with your API key
+const apiUrl = process.env.API_URL; // Replace with your Vercel project's API URL
+const apiKey = process.env.REACT_APP_API_KEY; // API key
 
 // Function to set display type
 const setDisplayType = async (type) => {

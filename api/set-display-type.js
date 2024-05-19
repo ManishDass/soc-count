@@ -2,8 +2,8 @@
 
 export default async function handler(req, res) {
     const { type } = req.query;
-    const apiKey = 'ae55df63-7f1f-4c41-be1e-c1bfcb1a4a7e'; // Replace with your API key
-    const esp8266IpAddress = 'http://117.209.106.78:80'; // Replace with your ESP8266 IP address
+    const apiKey = process.env.REACT_APP_API_KEY; // API key
+   const esp8266IpAddress = process.env.REACT_APP_DDNS_IP; // DDNS cz my ISP Dont provide me static IP
   
     try {
       const response = await fetch(`${esp8266IpAddress}/set-display-type?type=${type}`, {
