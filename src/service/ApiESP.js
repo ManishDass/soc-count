@@ -9,7 +9,6 @@ const setDisplayType = async (type) => {
   try {
     const response = await fetch(`${apiUrl}/set-display-type?type=${type}`, {
       method: 'GET',
-      mode: 'no-cors',
       headers: {
         'Authorization': `Bearer ${apiKey}`
       }
@@ -26,7 +25,6 @@ const setBrightness = async (brightness) => {
   try {
     const response = await fetch(`${apiUrl}/set-brightness?brightness=${brightness}`, {
       method: 'GET',
-      mode: 'no-cors',
       headers: {
         'Authorization': `Bearer ${apiKey}`
       }
