@@ -23,10 +23,10 @@ const setDisplayType = async (type) => {
 // Function to set brightness
 const setBrightness = async (brightness) => {
   try {
-    const response = await fetch(`${apiUrl}/set-brightness?brightness=${brightness}`, {
+    const response = await fetch(`https://smart-display-liard.vercel.app/api/set-brightness?brightness=${brightness}`, {
       method: 'GET',
       headers: {
-        'Authorization': `Bearer ${apiKey}`
+        'Authorization': `Bearer ae55df63-7f1f-4c41-be1e-c1bfcb1a4a7e`
       }
     });
     const data = await response.json();
