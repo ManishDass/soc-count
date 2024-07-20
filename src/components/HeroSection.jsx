@@ -27,8 +27,10 @@ const HeroSection = ({ setSelectedWidget }) => {
             {openTab === 1 && (
               <>
                 <Widget imagePath={ClockIcon1} controlType={'displayType'} value={4} label={'Time'} setSelectedWidget={setSelectedWidget} />
-                <Widget imagePath={WeatherIcon1} controlType={'displayType'} value={4} label={'Temperature'} setSelectedWidget={setSelectedWidget} />
-                <Widget imagePath={WeatherIcon2} controlType={'displayType'} value={4} label={'Humidity'} setSelectedWidget={setSelectedWidget} />
+                <Widget imagePath={WeatherIcon1} controlType={'displayType'} value={5} label={'Real Feel'} setSelectedWidget={setSelectedWidget} />
+                <Widget imagePath={WeatherIcon2} controlType={'displayType'} value={6} label={'Humidity'} setSelectedWidget={setSelectedWidget} />
+                <Widget imagePath={WeatherIcon1} controlType={'displayType'} value={7} label={'Temperature'} setSelectedWidget={setSelectedWidget} />
+                <Widget imagePath={WeatherIcon2} controlType={'displayType'} value={8} label={'Shuffle'} setSelectedWidget={setSelectedWidget} />
               </>
             )}
             {openTab === 2 && (
