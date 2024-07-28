@@ -23,13 +23,13 @@ IPAddress primaryDNS(8, 8, 8, 8);   // Optional
 IPAddress secondaryDNS(8, 8, 4, 4); // Optional
 
 // Google API key 2nd one
-#define API_KEY "AIzaSyCYkjwjv7h9rovSpIn4n3nXblNKDjE5q6k"
+#define API_KEY ""
 
 // YouTube channel ID
-#define CHANNEL_ID "UCEGRaTSnDX6zbhjD92e7XOw"
+#define CHANNEL_ID ""
 
 // API Key for authentication
-#define AUTH_KEY "ae55df63-7f1f-4c41-be1e-c1bfcb1a4a7e"
+#define AUTH_KEY ""
 
 // TM1637 display pins
 #define CLK 2
@@ -39,7 +39,7 @@ IPAddress secondaryDNS(8, 8, 4, 4); // Optional
 TM1637Display display(CLK, DIO);
 
 // Weather API credentials
-const char *apiKey = "b1fd6e14799699504191b6bdbcadfc35";
+const char *apiKey = "";
 const char *city = "kumarghat";
 
 // Timing variables
